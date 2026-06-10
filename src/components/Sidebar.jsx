@@ -2,11 +2,11 @@
 
 function Sidebar() {
     return (
-        <div className="bg-purple-400 w-[300px] min-h-screen flex flex-col">
+        <div className="bg-[#131313] w-[300px] min-h-screen flex flex-col">
 
-            <div className="upper-box border">
+            <div className="upper-box border-b-2 border-r-2 border-[#2D2D2D]">
 
-                <div className="in-up-box flex gap-4 items-center justify-center p-4">
+                <div className="in-up-box flex gap-4 items-center justify-center p-4 ">
                     <p>GitForce logo</p>
                     <div className="">
                         <p>GF_USER_01</p>
@@ -16,7 +16,7 @@ function Sidebar() {
                 </div>
             </div>
 
-            <div className="buttons flex flex-col justify-between bg-yellow-300 min-h-[600px]">
+            <div className="buttons flex flex-col justify-between min-h-[600px] border-r-2 border-b-2 border-[#2D2D2D]">
                 <div className="grp-btns flex flex-col px-12 pt-4 gap-4">
                     <button className="bg-white min-w-full p-2">Analyze</button>
                     <button>Agents</button>
@@ -26,7 +26,7 @@ function Sidebar() {
                 </div>
 
                 <div className="grp-btns flex flex-col px-12 pt-4 gap-4">
-                    <button className="mb-16 bg-white min-w-full py-4 ">Deploy Agent</button>
+                    <button className="mb-16 bg-[#FACC15] min-w-full py-4 ">Deploy Agent</button>
                 </div>
             </div>
 
