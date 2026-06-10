@@ -1,6 +1,6 @@
 function Terminal() {
     return(
-        <div className="Card flex flex-col m-8 min-w-[800px] border-2 border-[#2D2D2D] h-[400px]">
+        <div className="Card flex flex-col m-8 min-w-[800px] border-2 border-[#2D2D2D] h-[400px] font-mono">
             <div className="nav flex justify-between bg-gray-500 p-2">
                 <div className="flex gap-2">
                     <span style={{ color: '#FF5F57' }}>●</span>
@@ -14,11 +14,11 @@ function Terminal() {
             </div>
 
 
-            <div className="content bg-[#131313] flex flex-col gap-16 flex-1 border-y-2 border-[#2D2D2D] p-8">
+            <div className="content bg-[#131313] flex flex-col gap-2 justify-around flex-1 border-y-2 border-[#2D2D2D] p-8">
 
-                <p className="text-[#FACC15]">system ready</p>
+                <p className="text-[#FACC15] text-2xl uppercase font-bold">system ready</p>
                     
-                <div className="flex gap-2">
+                <div className="flex gap-2 font-xl">
                     <p className="text-[#4ADE80]">$</p>
                     <input type="text" placeholder="gitforce analyze" className="placeholder-[white] bg-[#131313] text-white focus:outline focus:outline-[#131313]-500"/>
                 </div>

@@ -2,7 +2,7 @@
 
 function Sidebar() {
     return (
-        <div className="bg-[#131313] w-[300px] min-h-screen flex flex-col">
+        <div className="bg-[#131313] w-[300px] min-h-screen flex flex-col font-mono">
 
             <div className="upper-box border-b-2 border-r-2 border-[#2D2D2D]">
 
