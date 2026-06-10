@@ -3,9 +3,9 @@ function Navbar() {
         <div className="navbar bg-[#1C1B1B] flex justify-between items-center p-6 border-y-2 border-[#2D2D2D]">
             <p className="text-[#FACC15]">NaN%</p>
             <div className="opts flex gap-8">
-                <p className="text-[#FACC15]">Analyze</p>
-                <p className="text-[#FACC15]">Agents</p>
-                <p className="text-[#FACC15]">Report</p>
+                <p className="text-[#CA8A04]">Analyze</p>
+                <p className="text-[#CA8A04]">Agents</p>
+                <p className="text-[#CA8A04]">Report</p>
             </div>
 
 
