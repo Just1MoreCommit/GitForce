@@ -8,7 +8,7 @@ function Terminal() {
                      <span style={{ color: '#28C840' }}>●</span>
                 </div>
 
-                <p>gitforce-console-tty1</p>
+                <p>gitforce-console</p>
 
                 
             </div>
