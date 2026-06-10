@@ -9,7 +9,7 @@ function App() {
       <Navbar/>
       <div className='flex'>
         <Sidebar/>
-        <div className='flex justify-center w-screen bg-blue-200'>
+        <div className='flex justify-center w-screen bg-[#1C1B1B] min-h-screen pt-[15vh]'>
           <Terminal/>
         </div>
         
