@@ -1,18 +1,11 @@
 function Navbar() {
     return (
-        <div className="navbar bg-gray-400 flex justify-between items-center p-6">
-            <p>NaN%</p>
-            <div className="opts flex gap-8">
-                <p>Analyze</p>
-                <p>Agents</p>
-                <p>Report</p>
-            </div>
-
+        <div className="navbar bg-[#000000] flex justify-between items-center font-mono">
+            <p className="text-[#FACC15] p-4 text-[30px]">GITFORCE</p>
 
             <div className="side flex gap-8 p-4">
-                <p>cli</p>
-                <p>Settings</p>
-                <p>FAQ</p>
+                <p className="text-[#FACC15]"> ⚙️</p>
+
             </div>
         </div>
     );
