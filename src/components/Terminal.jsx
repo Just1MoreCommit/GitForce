@@ -33,7 +33,11 @@ function Terminal() {
 
             </div>
 
+            
+
         </div>
+
+
     );
 }
 
