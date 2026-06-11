@@ -1,10 +1,10 @@
 function Navbar() {
     return (
-        <div className="navbar bg-[#1C1B1B] flex justify-between items-center p-2 border-y-2 border-[#2D2D2D] font-mono">
-            <p className="text-[#FACC15]">NaN%</p>
+        <div className="navbar bg-[#000000] flex justify-between items-center font-mono">
+            <p className="text-[#FACC15] p-4 text-[30px]">GITFORCE</p>
 
             <div className="side flex gap-8 p-4">
-                <p className="text-[#FACC15]"> ⚙️ Settings</p>
+                <p className="text-[#FACC15]"> ⚙️</p>
 
             </div>
         </div>
