@@ -1,12 +1,21 @@
 function Navbar() {
     return(
-        <div className="navbar bg-[#000000] flex justify-between items-center font-mono">
-            <p className="text-[#FACC15] p-4 text-[30px]">GITFORCE</p>
+        <div className="navbar bg-[#000000] flex justify-between items-center font-mono border-b-2 border-[#1c1b1b]">
+            
+           
+            
+            <p className="text-[#FACC15] pl-4 text-[20px]">GITFORCE</p>
+                <div className="navButtons flex gap-12 text-[#FACC15]">
+                    <button>Workspace</button>
+                    <button>Commits</button>
+                    <button>Agents</button>
+               </div> 
+             
 
-            <div className="side flex gap-8 p-4">
-                <p className="text-[#FACC15]">⚙️</p>
+            
+                <p className="text-[#FACC15] pr-4">⚙️</p>
 
-            </div>
+            
         </div>
     );
 }
