@@ -6,6 +6,7 @@ function SidebarLeft() {
                     <button className="text-[#FACC15]"> Narrator </button>
                     <button className="text-[#FACC15]"> Report </button>
                 </div>
+
             </div>
     )
 }
