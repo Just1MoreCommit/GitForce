@@ -7,6 +7,7 @@ function Navbar() {
             <p className="text-[#FACC15] pl-4 text-[20px]">GITFORCE</p>
                 <div className="navButtons flex gap-12 text-[#FACC15]">
                     <button>Workspace</button>
+                    <button>Commits</button>
                     <button>Agents</button>
                </div> 
              
