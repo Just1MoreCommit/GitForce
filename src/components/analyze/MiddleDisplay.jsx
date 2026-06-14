@@ -19,6 +19,7 @@ function MiddleDisplay() {
         nodes={initialNodes}
         edges={initialEdges}
         colorMode="dark"
+        proOptions={{hideAttribution: true}}
         fitView
       >
         <Background color="#1c1b1b" gap={20} />
