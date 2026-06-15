@@ -1,5 +1,5 @@
 // src/components/AgentNode.jsx
-import { Handle, Position } from 'reactflow';
+import { Handle, Position } from '@xyflow/react';
 
 // This lookup object maps each status string to a complete set of Tailwind classes.
 // The reason we write out the FULL class names here instead of building them
@@ -92,12 +92,16 @@ const AgentNode = ({ data, selected }) => {
           Handle is a React Flow component. We pass style as an inline style here
           (not Tailwind) because Handle's internal color is controlled via the
           style prop specifically — Tailwind classes don't reach inside it */}
-      <Handle
-        type="target"
-        position={Position.Top}
-        style={{ background: styles.handle }}
-      />
-
+        <Handle
+            type="target"
+            position={Position.Top}
+            style={{
+                width: 0,
+                height: 0,
+                background: 'transparent',
+                border: 'none',
+            }}
+        />
       {/* Agent type label — the small eyebrow text at the top of the card.
           It's small, uppercase, and spaced out because at tiny font sizes
           uppercase + letter spacing makes text much more legible */}
@@ -127,11 +131,16 @@ const AgentNode = ({ data, selected }) => {
       </div>
 
       {/* The outgoing connection dot — edges leaving this node start here */}
-      <Handle
-        type="source"
-        position={Position.Bottom}
-        style={{ background: styles.handle }}
-      />
+        <Handle
+            type="source"
+            position={Position.Bottom}
+            style={{
+                width: 0,
+                height: 0,
+                background: 'transparent',
+                border: 'none',
+            }}
+            />
 
     </div>
   );
