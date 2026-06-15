@@ -1,32 +1,61 @@
-import { ReactFlow, Background, Controls } from '@xyflow/react'
+import { ReactFlow, Background, Controls, Position } from '@xyflow/react'
+import AgentNode from './react-flow-card/AgentNode'
 import '@xyflow/react/dist/style.css'
 
-const initialNodes = [
-  { id: '1', position: { x: 100, y: 100 }, data: { label: 'feat: add auth' } },
-  { id: '2', position: { x: 350, y: 100 }, data: { label: 'fix: CORS issue' } },
-  { id: '3', position: { x: 600, y: 100 }, data: { label: 'chore: update deps' } },
+const nodeTypes = {
+  agentNode: AgentNode
+}
+
+
+const nodes = [
+  {
+    id: '1',
+    type: 'agentNode',
+    position: {x:300, y:0},
+    style: {padding: 0},
+    data: {
+      label: 'Archaelogist',
+      agentType: 'Discovery',
+      status: 'running',
+      statusText: 'Cloning repo',
+    }
+  },
+  {
+      id:'2',
+      type:'agentNode',
+      position: {x:300, y:160},
+      style: {padding: 0},
+      data: {
+        label: 'Analyst',
+        agentType: 'Analysis',
+        status: 'idle',
+        statusText: 'Waiting...'
+      },
+
+    },
 ]
 
-const initialEdges = [
-  { id: 'e1-2', source: '1', target: '2', animated: true },
-  { id: 'e2-3', source: '2', target: '3', animated: true },
+const edges = [
+  {id: 'e1-2', source: '1', target:'2'},
 ]
 
-function MiddleDisplay() {
+const MiddleDisplay = ()=> {
   return (
-    <div style={{ width: '100%', height: '100%' }}>
+    <div className='w-full h-screen'>
       <ReactFlow
-        nodes={initialNodes}
-        edges={initialEdges}
-        colorMode="dark"
+        nodes = {nodes}
+        edges = {edges}
+        nodeTypes = {nodeTypes}
         proOptions={{hideAttribution: true}}
         fitView
       >
-        <Background color="#1c1b1b" gap={20} />
-        <Controls />
-      </ReactFlow>
-    </div>
-  )
-}
 
+        <Background color='#1a1a1a' gap={16}/>
+
+        <Controls/>
+      </ReactFlow>
+
+    </div>
+  );
+}
 export default MiddleDisplay
