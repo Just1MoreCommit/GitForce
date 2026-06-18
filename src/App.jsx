@@ -11,7 +11,6 @@ const router = createBrowserRouter([
   {
     path:'/analyze',
     element: <Analyze/>
-
   },
 ]);
 
